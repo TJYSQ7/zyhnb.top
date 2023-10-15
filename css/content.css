@@ -1,0 +1,94 @@
+/* 内容区 */
+.content {
+    flex: 1;
+    overflow: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* 左 */
+.article {
+    width: 694px;
+    margin-top: 10px;
+}
+
+/* 内容块儿 */
+.box {
+    height: 180px;
+    background-color: white;
+    margin-bottom: 2px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    padding: 20px;
+}
+
+.box a {
+    color: black;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.box a:active {
+    color: #867c7c;
+}
+
+.box p {
+    font-size: 15px;
+}
+
+/* 右 */
+.sidebar {
+    width: 296px;
+    margin-top: 10px;
+    margin-left: 10px;
+    position: sticky;
+    top: 10px;
+}
+
+/* 侧栏 */
+.hot-question {
+    height: 480px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+hr {
+    margin: 25px 0px;
+    border: none;
+    height: 1.5px;
+    background-color: #c9c9c9;
+}
+
+/* footer */
+.footer {
+    padding-left: 20px;
+    line-height: 25px;
+
+}
+
+.footer a {
+    color: #64748B;
+    font-size: 14px;
+}
+
+.footer p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* 响应式 */
+.footers {
+    padding-left: 20px;
+    line-height: 25px;
+
+}
+
+.footers a {
+    color: #64748B;
+    font-size: 14px;
+}
+
+.footers p {
+    color: #64748B;
+    font-size: 14px;
+}

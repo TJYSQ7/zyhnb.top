@@ -1,0 +1,119 @@
+body {
+    background-color: rgb(241, 245, 249);
+}
+
+/* 内容区 */
+.content {
+    flex: 1;
+    overflow: auto;
+
+    display: flex;
+    justify-content: center;
+}
+
+/* 左 */
+.article {
+    width: 694px;
+    margin-top: 20px;
+}
+
+/* 内容块儿 */
+.box {
+    height: 80px;
+    padding: 20px;
+    margin-bottom: 20px;
+
+    background-color: white;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+
+    display: flex;
+    align-items: center;
+}
+
+.tu {
+    font-size: 65px;
+    margin-bottom: 4px;
+}
+
+.title {
+    color: #475569;
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.abstract {
+    color: #64748B;
+    font-size: 14px;
+}
+
+.box:hover {
+    background-color: rgba(255, 255, 255, 0.489)
+}
+
+.box:active {
+    background-color: white;
+}
+
+/* 右 */
+.sidebar {
+    width: 296px;
+    margin-top: 20px;
+    margin-left: 10px;
+    position: sticky;
+    top: 10px;
+}
+
+.tuijian {
+    font-size: 20px;
+    line-height: 55px;
+}
+
+/* 侧栏 */
+.hot-question {
+    height: 480px;
+    background-color: white;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 8px;
+}
+
+hr {
+    margin: 25px 0px;
+    border: none;
+    height: 1.5px;
+    background-color: #c9c9c9;
+}
+
+/* footer */
+.footer {
+    padding-left: 20px;
+    line-height: 25px;
+
+}
+
+.footer a {
+    color: #64748B;
+    font-size: 14px;
+}
+
+.footer p {
+    color: #64748B;
+    font-size: 14px;
+}
+
+/* 响应式 */
+.footers {
+    padding-left: 20px;
+    line-height: 25px;
+
+}
+
+.footers a {
+    color: #64748B;
+    font-size: 14px;
+}
+
+.footers p {
+    color: #64748B;
+    font-size: 14px;
+}

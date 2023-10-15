@@ -1,0 +1,29 @@
+@media (min-width:1050px) {
+    .footers {
+        display: none;
+    }
+}
+
+@media (max-width: 1050px) {
+    .sidebar {
+        display: none;
+    }
+}
+
+@media (max-width: 870px) {
+    .logo {
+        display: none;
+    }
+
+    .search {
+        display: none;
+    }
+
+    .dropdown {
+        display: none;
+    }
+
+    .article {
+        width: 350px;
+    }
+}
