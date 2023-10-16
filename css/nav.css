@@ -44,7 +44,10 @@
     color: #867c7c;
 }
 
-.active {
+body.index li.index,
+body.repository li.repository,
+body.AI li.AI,
+body.shuqian li.shuqian {
     border-bottom: 4px solid #056de8;
     border-top: 4px solid transparent;
 }
