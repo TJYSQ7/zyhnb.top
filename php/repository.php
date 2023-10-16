@@ -79,15 +79,7 @@
 
             <hr>
 
-            <div class="footers"><!-- 底部区域 -->
-
-                <a href="http://beian.miit.gov.cn/">豫ICP备2023004558号-1</a>
-                <p>© 2023 张越豪的博客 zyhnb.top</p>
-                <a href="#">关于平台</a>
-                <span>🤙</span>
-                <a href="https://blog.csdn.net/m0_73378894">与我联系</a>
-
-            </div>
+            <?php require '../view/footer.html' ?><!-- 底部区域 -->
 
         </div>
 
@@ -100,15 +92,7 @@
 
             <hr>
 
-            <div class="footer"><!-- 底部区域 -->
-
-                <a href="http://beian.miit.gov.cn/">豫ICP备2023004558号-1</a>
-                <p>© 2023 张越豪的博客 zyhnb.top</p>
-                <a href="#">关于平台</a>
-                <span>🤙</span>
-                <a href="https://blog.csdn.net/m0_73378894">与我联系</a>
-
-            </div>
+            <?php require '../view/footer.html' ?><!-- 底部区域 -->
 
         </div>
 
