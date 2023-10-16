@@ -12,66 +12,36 @@
 </head>
 
 <body class="repository">
-    <div class="nav"><!-- 导航栏 -->
 
-        <div class="logo"><!-- Logo区域 -->
-            <a href="//www.zyhnb.top">信条</a>
-        </div>
-
-        <ul class="nav-list"><!-- 列表区域 -->
-
-            <li class="index"><a href="//zyhnb.top">首页</a></li>
-            <li class="repository"><a href="//zyhnb.top/view/repository.html">知识库</a></li>
-            <li class="AI"><a href="//zyhnb.top/view/AI.html">AI助手</a></li>
-            <li class="shuqian"><a href="//zyhnb.top/view/shuqian.html">书签分享</a></li>
-
-        </ul>
-
-        <div class="search"><!-- 搜索区域 -->
-
-            <input type="text" class="search-input" placeholder="   搜索你感兴趣的内容..." />
-            <button class="search-button">搜索</button>
-
-        </div>
-
-        <div class="dropdown"><!-- 用户区域 -->
-            <button class="dropbtn">🐧</button>
-            <div class="dropdown-content">
-                <a href="#">登录/注册</a>
-                <a href="#">内容管理</a>
-                <a href="#">退出登录</a>
-            </div>
-        </div>
-
-    </div>
+    <?php require '../view/nav.html' ?><!-- 导航栏 -->
 
     <div class="content"><!-- 内容区域 -->
 
         <div class="article"> <!-- 文章区域 -->
 
             <div class="tuijian">👍🏻 推荐</div>
-            <a href="../repository/shell/shell.html" class="box">
+            <a href="//zyhnb.top/repository/shell/shell.html" class="box">
                 <div class="tu">📒</div>
                 <div>
                     <div class="title">命令手册</div>
                     <div class="abstract">Linux常用命令: cd、ls、cp、mv、rm、cat、grep、mount、chmod......</div>
                 </div>
             </a>
-            <a href="../repository/Docker/Docker.html" class="box">
+            <a href="//zyhnb.top/repository/Docker/Docker.html" class="box">
                 <div class="tu">🐋</div>
                 <div>
                     <div class="title">Docker</div>
                     <div class="abstract">容器，镜像，仓库......</div>
                 </div>
             </a>
-            <a href="../repository/LAMP/LAMP.html" class="box">
+            <a href="//zyhnb.top/repository/LAMP/LAMP.html" class="box">
                 <div class="tu">🪟</div>
                 <div>
                     <div class="title">LAMP</div>
                     <div class="abstract">Linux，apache，MySQL，PHP</div>
                 </div>
             </a>
-            <a href="../repository/MySQL/MySQL.html" class="box">
+            <a href="//zyhnb.top/repository/MySQL/MySQL.html" class="box">
                 <div class="tu">🌐</div>
                 <div>
                     <div class="title">MySQL</div>
