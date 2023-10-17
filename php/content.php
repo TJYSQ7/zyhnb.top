@@ -12,15 +12,16 @@
 </head>
 
 <body class="index">
-
     <?php require '../view/nav.html' ?><!-- 导航栏 -->
-
     <div class="content"><!-- 内容区域 -->
+
+
 
         <div class="article"></div>
 
-    </div>
 
+
+    </div>
 </body>
 
 </html>

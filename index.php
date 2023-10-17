@@ -25,8 +25,8 @@ $num = 10;
 
             <div class="box"></div>
             <div class="box">
-                <div><a href="#"><?php echo $data['title']; ?></a></div>
-                <div><span><?php echo $data['text']; ?></span></div>
+                <div><a href="#"><?php echo $data['titl']; ?></a></div>
+                <div><span><?php echo $data['tex']; ?></span></div>
             </div>
             <?php
             for ($i = 0; $i < $num; ++$i) {

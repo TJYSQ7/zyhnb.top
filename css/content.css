@@ -26,14 +26,19 @@
     color: #121212;
     font-size: 18px;
     font-weight: 600;
+    line-height: 3;
+}
+
+.box a:hover {
+    color: #5a5454;
 }
 
 .box a:active {
-    color: #867c7c;
+    color: #8a8383;
 }
 
 .box span {
-    line-height: 1.6;
+    line-height: 2;
 }
 
 /* 右 */
