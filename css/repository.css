@@ -23,7 +23,7 @@ body {
     padding: 20px;
     margin-bottom: 20px;
 
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 
@@ -52,7 +52,7 @@ body {
 }
 
 .box:active {
-    background-color: white;
+    background-color: #FFFFFF;
 }
 
 /* 右 */
@@ -72,7 +72,7 @@ body {
 /* 侧栏 */
 .hot-question {
     height: 480px;
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
     border-radius: 8px;
 }
@@ -97,23 +97,6 @@ hr {
 }
 
 .footer p {
-    color: #64748B;
-    font-size: 14px;
-}
-
-/* 响应式 */
-.footers {
-    padding-left: 20px;
-    line-height: 25px;
-
-}
-
-.footers a {
-    color: #64748B;
-    font-size: 14px;
-}
-
-.footers p {
     color: #64748B;
     font-size: 14px;
 }

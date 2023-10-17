@@ -8,7 +8,7 @@
     align-items: center;
     z-index: 100;
 
-    background-color: white;
+    background-color: #FFFFFF;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
 
@@ -32,18 +32,6 @@
     line-height: 44px;
 }
 
-.nav ul li a {
-    color: #867c7c;
-}
-
-.nav ul li a:hover {
-    color: black;
-}
-
-.nav ul li a:active {
-    color: #867c7c;
-}
-
 body.index li.index,
 body.repository li.repository,
 body.AI li.AI,
@@ -52,6 +40,25 @@ body.shuqian li.shuqian {
     border-top: 4px solid transparent;
 }
 
+.nav ul li a {
+    color: #8493A5;
+}
+
+body.index li.index a,
+body.repository li.repository a,
+body.AI li.AI a,
+body.shuqian li.shuqian a {
+    color: #121212;
+    font-weight: 600;
+}
+
+.nav ul li a:hover {
+    color: #121212;
+}
+
+.nav ul li a:active {
+    color: #8493A5;
+}
 
 /* 搜索 */
 .search {
@@ -92,7 +99,7 @@ body.shuqian li.shuqian {
     height: 32px;
     width: 70px;
     margin-left: 6px;
-    color: white;
+    color: #FFFFFF;
     background: #1880ff;
     border-radius: 12px;
 }
@@ -110,7 +117,7 @@ body.shuqian li.shuqian {
 .dropbtn {
     font-size: 30px;
     line-height: 52px;
-    background-color: white;
+    background-color: #FFFFFF;
     border: none;
     cursor: pointer;
 }
@@ -133,7 +140,7 @@ body.shuqian li.shuqian {
 
 /* 下拉菜单的链接 */
 .dropdown-content a {
-    color: black;
+    color: #121212;
     padding: 12px;
     display: block;
 }
