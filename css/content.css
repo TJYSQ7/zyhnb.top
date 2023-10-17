@@ -32,8 +32,8 @@
     color: #867c7c;
 }
 
-.box p {
-    font-size: 15px;
+.box span {
+    line-height: 1.6;
 }
 
 /* 右 */
