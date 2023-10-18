@@ -15,14 +15,17 @@
     <?php require './view/nav.html' ?><!-- 导航栏 -->
     <div class="content"><!-- 内容区域 -->
         <div class="article"> <!-- 文章区域 -->
+            <div class="box">
+                <div><a href="./common/test.php">测试连接</a></div>
+                <div><span></span></div>
+            </div>
 
 
 
-            <?php require './common/pdo.php'; ?>
+
+
+            <?php require './common/pdo.php'; ?><!-- 连接数据库 -->
             <?php require './data/content_list.php'; ?>
-
-            <div class="box"></div>
-
             <?php while ($row = $stmt->fetch()) { ?>
 
                 <div class="box">
@@ -31,6 +34,8 @@
                 </div>
 
             <?php }; ?>
+
+
 
 
 
