@@ -1,8 +1,3 @@
-<?php
-$data = require './data/data.php';
-$num = 10;
-?>
-
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -23,16 +18,19 @@ $num = 10;
 
 
 
+            <?php require './common/pdo.php'; ?>
+            <?php require './data/content_list.php'; ?>
+
             <div class="box"></div>
-            <div class="box">
-                <div><a href="#"><?php echo $data['titl']; ?></a></div>
-                <div><span><?php echo $data['tex']; ?></span></div>
-            </div>
-            <?php
-            for ($i = 0; $i < $num; ++$i) {
-                echo '<div class="box"></div>';
-            };
-            ?>
+
+            <?php while ($row = $stmt->fetch()) { ?>
+
+                <div class="box">
+                    <div><a href="#"><?php echo $row['title']; ?></a></div>
+                    <div><span><?php echo $row['abstract']; ?></span></div>
+                </div>
+
+            <?php }; ?>
 
 
 
