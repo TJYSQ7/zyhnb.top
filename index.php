@@ -15,25 +15,21 @@
     <?php require './view/nav.html' ?><!-- 导航栏 -->
     <div class="content"><!-- 内容区域 -->
         <div class="article"> <!-- 文章区域 -->
-            <div class="box">
-                <div><a href="./common/test.php">测试连接</a></div>
-                <div><span></span></div>
-            </div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
 
 
 
 
 
-            <?php require './common/pdo.php'; ?><!-- 连接数据库 -->
-            <?php require './data/content_list.php'; ?>
-            <?php while ($row = $stmt->fetch()) { ?>
 
-                <div class="box">
-                    <div><a href="#"><?php echo $row['title']; ?></a></div>
-                    <div><span><?php echo $row['abstract']; ?></span></div>
-                </div>
 
-            <?php }; ?>
 
 
 
