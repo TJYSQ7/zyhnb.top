@@ -26,8 +26,7 @@
 
 .nav ul li {
     display: inline-block;
-    margin-right: 20px;
-    margin-left: 20px;
+    margin: 0 20px;
     font-size: 16px;
     line-height: 44px;
 }
@@ -42,8 +41,7 @@ body.shuqian li.shuqian {
 
 .nav ul li a {
     color: #8493A5;
-    padding-top: 17px;
-    padding-bottom: 17px;
+    padding: 17px 0;
 }
 
 body.index li.index a,

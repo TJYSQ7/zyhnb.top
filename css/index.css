@@ -16,9 +16,9 @@
 /* 内容块儿 */
 .box {
     height: 180px;
-    background-color: #FFFFFF;
+    background-color: #fff;
     margin-bottom: 2px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
     padding: 20px;
 }
 
@@ -53,8 +53,8 @@
 /* 侧栏 */
 .hot-question {
     height: 480px;
-    background-color: #FFFFFF;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
 }
 
 hr {
