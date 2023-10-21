@@ -16,20 +16,22 @@
     <div class="content"><!-- 内容区域 -->
         <div class="article"> <!-- 文章区域 -->
             <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
-            <div class="box"></div>
 
 
 
 
 
+            <?php require './common/conn.php'; ?><!-- 连接数据库 -->
+            <?php require './data/content_list.php'; ?>
+            <?php while ($row = mysqli_fetch_array($select_1)) { ?>
 
+                <div class="box">
+                    <div><a href="#"><?php echo $row['title']; ?></a></div>
+                    <div><span><?php echo $row['abstract']; ?></span></div>
+                </div>
 
+            <?php }; ?>
+            <?php require './common/break.php' ?><!-- 断开连接 -->
 
 
 

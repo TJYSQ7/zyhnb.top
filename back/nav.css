@@ -50,10 +50,9 @@ nav ul {
     line-height: 44px;
 }
 
-body.index li.index,
-body.repository li.repository,
-body.AI li.AI,
-body.shuqian li.shuqian {
+body.a li.a,
+body.b li.b,
+body.c li.c {
     border-bottom: 4px solid #056de8;
     border-top: 4px solid transparent;
 }
@@ -62,10 +61,9 @@ nav ul li a {
     color: #8493A5;
 }
 
-body.index li.index a,
-body.repository li.repository a,
-body.AI li.AI a,
-body.shuqian li.shuqian a {
+body.a .a a,
+body.b .b a,
+body.c .c a {
     color: #121212;
     font-weight: 600;
 }
