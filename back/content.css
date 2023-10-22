@@ -19,6 +19,14 @@ table {
     margin: 30px auto;
 }
 
+caption {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px dashed #e4b247;
+    color: #0bef40;
+}
+
 th {
     width: 25%;
     height: 40px;

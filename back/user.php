@@ -9,27 +9,27 @@
     <link rel="stylesheet" href="./content.css">
 </head>
 
-<body class="b">
+<body class="d">
     <?php require './nav.html' ?>
     <div class="content"><!-- 内容区域 -->
 
 
         <?php require '../common/conn.php' ?><!-- 连接数据库 -->
-        <?php require '../data/content_list.php' ?>
+        <?php require '../data/info_list.php' ?>
         <table>
-            <caption>内容管理</caption>
+            <caption>用户管理</caption>
             <tr>
-                <th>标题</th>
-                <th>作者</th>
-                <th>状态</th>
+                <th>id</th>
+                <th>用户</th>
+                <th>邮箱</th>
                 <th>操作</th>
             </tr>
             <?php while ($row = mysqli_fetch_array($select)) { ?>
 
                 <tr>
-                    <td><?= $row['title'] ?></td>
-                    <td>2</td>
-                    <td>2</td>
+                    <td><?= $row['id'] ?></td>
+                    <td><?= $row['username'] ?></td>
+                    <td><?= $row['email'] ?></td>
                     <td>2</td>
                 </tr>
 

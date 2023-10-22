@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 50%;
+            margin: auto;
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 25px;
+            font-weight: bold;
+            color: rgb(254, 121, 19);
+        }
+
+        th {
+            width: 50%;
+            padding: 8px;
+            text-align: right;
+        }
+
+        td {
+            width: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="../data/info_add.php" method="post" onsubmit="return check()">
+        <table>
+            <caption>注册</caption>
+            <tr>
+                <th>用户名:</th>
+                <td><input type="text" name="name"></td>
+            </tr>
+            <tr>
+                <th>密码:</th>
+                <td><input type="password" name="pw"></td>
+            </tr>
+            <tr>
+                <th>确认密码:</th>
+                <td><input type="password" name="cpw"></td>
+            </tr>
+            <tr>
+                <th>邮箱:</th>
+                <td><input type="text" name="email"></td>
+            </tr>
+            <tr>
+                <th><input type="reset"></th>
+                <td><input type="submit"></td>
+            </tr>
+        </table>
+    </form>
+    <script>
+        function check() {
+            let name = document.getElementsByName('name')[0].value.trim();
+            let pw = document.getElementsByName('pw')[0].value.trim();
+            let cpw = document.getElementsByName('cpw')[0].value.trim();
+            let email = document.getElementsByName('email')[0].value.trim();
+            // 检验用户名
+            let nameReg = /^[a-zA-Z0-9]{3,10}$/;
+            if (!nameReg.test(name)) {
+                alert('用户名必须填写,且只能由大小写字符和数字构成,长度为3到10个字符');
+                return false;
+            }
+            // 检验密码
+            let pwReg = /^[a-zA-Z0-9]{6,10}$/;
+            if (!pwReg.test(pw)) {
+                alert('密码必须填写，且只能由大小写字符和数字构成，长度为6到10个字符');
+                return false;
+            }
+            if (pw !== cpw) {
+                alert('两次输入的密码不一致');
+                return false;
+            }
+            // 检验邮箱
+            let emailReg = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+            if (!emailReg.test(email)) {
+                alert('请输入正确的邮箱地址');
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>
