@@ -12,3 +12,19 @@
     /* justify-content: space-evenly; */
     align-items: center;
 }
+
+.head {
+    width: 90%;
+    line-height: 40px;
+    padding: 0 20px;
+    border-top: 2px solid #c9c9c9;
+    border-bottom: 2px solid rgb(0, 170, 255);
+    margin-top: 20px;
+}
+
+.list {
+    width: 90%;
+    line-height: 40px;
+    padding: 0 20px;
+    border-bottom: 2px solid #c9c9c9;
+}
