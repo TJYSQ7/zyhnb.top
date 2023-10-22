@@ -12,15 +12,28 @@
 <body class="b">
     <?php require './nav.html' ?>
     <div class="content"><!-- 内容区域 -->
-        <div class="head">标题</div>
+
 
         <?php require '../common/conn.php' ?><!-- 连接数据库 -->
         <?php require '../data/content_list.php' ?>
-        <?php while ($row = mysqli_fetch_array($select_1)) { ?>
+        <table>
+            <tr>
+                <th>标题</th>
+                <th>作者</th>
+                <th>状态</th>
+                <th>操作</th>
+            </tr>
+            <?php while ($row = mysqli_fetch_array($select_1)) { ?>
 
-            <div class="list"><?= $row['title'] ?></div>
+                <tr>
+                    <td><?= $row['title'] ?></td>
+                    <td>2</td>
+                    <td>2</td>
+                    <td>2</td>
+                </tr>
 
-        <?php }; ?>
+            <?php }; ?>
+        </table>
         <form action="../data/content_del.php" method="post">
             <input type="text" name="title" placeholder="输入要删除的标题">
             <input type="submit" value="删除">

@@ -13,18 +13,20 @@
     align-items: center;
 }
 
-.head {
+table {
+    border-collapse: collapse;
     width: 90%;
-    line-height: 40px;
-    padding: 0 20px;
-    border-top: 2px solid #c9c9c9;
-    border-bottom: 2px solid rgb(0, 170, 255);
-    margin-top: 20px;
+    margin: 30px auto;
 }
 
-.list {
-    width: 90%;
-    line-height: 40px;
-    padding: 0 20px;
-    border-bottom: 2px solid #c9c9c9;
+th {
+    width: 25%;
+    height: 40px;
+    background-color: #aaceff;
+}
+
+td {
+    text-align: center;
+    height: 60px;
+    border-bottom: 1px solid #c9c9c9;
 }
