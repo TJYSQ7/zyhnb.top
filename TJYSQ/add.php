@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="./add.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/add.css">
 </head>
 
 <body class="c">
-    <?php require './nav.html' ?>
+    <?php require './view/nav.html' ?>
     <div class="content"><!-- 内容区域 -->
 
 

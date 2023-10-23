@@ -19,28 +19,28 @@
 
 
             <div class="tuijian">👍🏻 推荐</div>
-            <a href="//zyhnb.top/repository/shell/shell.html" class="box">
+            <a href="//zyhnb.top/data/repository/shell/shell.html" class="box">
                 <div class="tu">📒</div>
                 <div>
                     <div class="title">命令手册</div>
                     <div class="abstract">Linux常用命令: cd、ls、cp、mv、rm、cat、grep、mount、chmod......</div>
                 </div>
             </a>
-            <a href="//zyhnb.top/repository/Docker/Docker.html" class="box">
+            <a href="//zyhnb.top/data/repository/Docker/Docker.html" class="box">
                 <div class="tu">🐋</div>
                 <div>
                     <div class="title">Docker</div>
                     <div class="abstract">容器，镜像，仓库......</div>
                 </div>
             </a>
-            <a href="//zyhnb.top/repository/LAMP/LAMP.html" class="box">
+            <a href="//zyhnb.top/data/repository/LAMP/LAMP.html" class="box">
                 <div class="tu">🪟</div>
                 <div>
                     <div class="title">LAMP</div>
                     <div class="abstract">Linux，apache，MySQL，PHP</div>
                 </div>
             </a>
-            <a href="//zyhnb.top/repository/MySQL/MySQL.html" class="box">
+            <a href="//zyhnb.top/data/repository/MySQL/MySQL.html" class="box">
                 <div class="tu">🌐</div>
                 <div>
                     <div class="title">MySQL</div>

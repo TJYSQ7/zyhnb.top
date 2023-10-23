@@ -5,12 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./nav.css">
-    <link rel="stylesheet" href="./content.css">
+    <link rel="stylesheet" href="./css/nav.css">
+    <link rel="stylesheet" href="./css/content.css">
 </head>
 
 <body class="d">
-    <?php require './nav.html' ?>
+    <?php require './view/nav.html' ?>
     <div class="content"><!-- 内容区域 -->
 
 
@@ -39,7 +39,7 @@
             <input type="text" name="title" placeholder="输入要删除的标题">
             <input type="submit" value="删除">
         </form>
-        <?php require '../common/break.php' ?><!-- 断开连接 -->
+        <?php require '../common/disconn.php' ?><!-- 断开连接 -->
 
 
 

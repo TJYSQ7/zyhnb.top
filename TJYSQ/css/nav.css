@@ -52,7 +52,8 @@ nav ul {
 
 body.a li.a,
 body.b li.b,
-body.c li.c {
+body.c li.c,
+body.d li.d {
     border-bottom: 4px solid #056de8;
     border-top: 4px solid transparent;
 }
@@ -63,7 +64,8 @@ nav ul li a {
 
 body.a .a a,
 body.b .b a,
-body.c .c a {
+body.c .c a,
+body.d .d a {
     color: #121212;
     font-weight: 600;
 }

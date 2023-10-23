@@ -12,4 +12,4 @@ if ($insert) {
 } else {
     echo "添加失败";
 }
-require '../common/break.php';//断开连接
+require '../common/disconn.php';//断开连接

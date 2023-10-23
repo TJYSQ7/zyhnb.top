@@ -1,0 +1,21 @@
+table {
+    width: 50%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+caption {
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(254, 121, 19);
+}
+
+th {
+    width: 50%;
+    padding: 8px;
+    text-align: right;
+}
+
+td {
+    width: 50%;
+}

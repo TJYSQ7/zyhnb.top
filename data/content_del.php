@@ -9,4 +9,4 @@ if ($del) {
 } else {
     echo '删除失败';
 }
-require '../common/break.php';
+require '../common/disconn.php';
