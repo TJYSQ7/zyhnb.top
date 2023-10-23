@@ -13,7 +13,7 @@
 
 <body class="shuqian">
     <?php require '../view/nav.html' ?><!-- 导航栏 -->
-    <div class="content"><!-- 内容区 -->
+    <main><!-- 内容区 -->
 
 
 
@@ -23,7 +23,7 @@
 
 
 
-    </div>
+    </main>
 </body>
 
 </html>

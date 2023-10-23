@@ -13,7 +13,7 @@
 
 <body class="index">
     <?php require '../view/nav.html' ?><!-- 导航栏 -->
-    <div class="content"><!-- 内容区域 -->
+    <main><!-- 内容区域 -->
 
 
 
@@ -21,7 +21,7 @@
 
 
 
-    </div>
+    </main>
 </body>
 
 </html>

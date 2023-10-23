@@ -3,7 +3,7 @@ body {
 }
 
 /* 内容区 */
-.content {
+main {
     flex: 1;
     overflow: auto;
 

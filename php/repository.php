@@ -13,7 +13,7 @@
 
 <body class="repository">
     <?php require '../view/nav.html' ?><!-- 导航栏 -->
-    <div class="content"><!-- 内容区域 -->
+    <main><!-- 内容区域 -->
         <div class="article"> <!-- 文章区域 -->
 
 
@@ -88,7 +88,7 @@
             <hr>
             <?php require '../view/footer.html' ?><!-- 底部区域 -->
         </div>
-    </div>
+    </main>
 </body>
 
 </html>

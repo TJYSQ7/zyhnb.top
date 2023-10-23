@@ -1,5 +1,5 @@
 /* 导航栏 */
-.nav {
+nav {
     width: 100%;
     height: 52px;
 
@@ -13,19 +13,19 @@
 }
 
 /* logo */
-.logo a {
+.logo {
     color: #056de8;
     font: 500 32px '优设标题黑';
     line-height: 52px;
 }
 
 /* 列表 */
-.nav ul {
+nav ul {
     list-style: none;
     margin: 0 60px;
 }
 
-.nav ul li {
+nav ul li {
     display: inline-block;
     margin: 0 20px;
     font-size: 16px;
@@ -40,7 +40,7 @@ body.shuqian li.shuqian {
     border-top: 4px solid transparent;
 }
 
-.nav ul li a {
+nav ul li a {
     color: #8493A5;
     padding: 17px 0;
 }
@@ -53,7 +53,7 @@ body.shuqian li.shuqian a {
     font-weight: 600;
 }
 
-.nav ul li a:hover {
+nav ul li a:hover {
     color: #121212;
 }
 

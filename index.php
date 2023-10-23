@@ -13,7 +13,7 @@
 
 <body class="index">
     <?php require './view/nav.html' ?><!-- 导航栏 -->
-    <div class="content"><!-- 内容区域 -->
+    <main><!-- 内容区域 -->
         <div class="article"> <!-- 文章区域 -->
             <div class="box"></div>
 
@@ -23,7 +23,7 @@
 
             <?php require './common/conn.php'; ?><!-- 连接数据库 -->
             <?php require './data/content_list.php'; ?>
-            <?php while ($row = mysqli_fetch_array($select_1)) { ?>
+            <?php while ($row = mysqli_fetch_array($select)) { ?>
 
                 <div class="box">
                     <div><a href="#"><?php echo $row['title']; ?></a></div>
@@ -31,7 +31,7 @@
                 </div>
 
             <?php }; ?>
-            <?php require './common/break.php' ?><!-- 断开连接 -->
+            <?php require './common/disconn.php' ?><!-- 断开连接 -->
 
 
 
@@ -46,7 +46,7 @@
             <hr>
             <?php require './view/footer.html' ?><!-- 底部区域 -->
         </div>
-    </div>
+    </main>
 </body>
 
 </html>
