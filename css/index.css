@@ -67,18 +67,18 @@ hr {
 }
 
 /* footer */
-.footer {
+footer {
     padding-left: 20px;
     line-height: 25px;
 
 }
 
-.footer a {
+footer a {
     color: #64748B;
     font-size: 14px;
 }
 
-.footer p {
+footer p {
     color: #64748B;
     font-size: 14px;
 }
