@@ -111,33 +111,54 @@ nav ul li a:hover {
 }
 
 /* 用户 */
+.login {
+    width: 80px;
+    height: 34px;
+    padding: 0 6px;
+    font-size: 14px;
+    line-height: 34px;
+    text-align: center;
+    background-color: rgba(30, 128, 255, .05);
+    border: 1px solid rgba(30, 128, 255, .3);
+    border-radius: 4px;
+}
+
+.login a {
+    padding: 9px 0;
+    color: #007fff;
+}
+
+.login span {
+    color: #abcdff;
+}
+
 /* 下拉按钮 */
-.dropbtn {
+/* .dropbtn {
     font-size: 30px;
     line-height: 52px;
     background-color: #FFFFFF;
     border: none;
     cursor: pointer;
-}
+} */
 
 /* 容器 <div> - 需要定位下拉内容 */
-.dropdown {
+/* .dropdown {
     position: relative;
     display: inline-block;
-}
+} */
 
 /* 下拉内容-默认隐藏 */
-.dropdown-content {
+/* .dropdown-content {
     position: absolute;
     display: none;
-}
+} */
 
 /* 悬浮显示 */
-.dropdown:hover .dropdown-content {
+/* .dropdown:hover .dropdown-content {
     display: block;
-}
+} */
 
-.dropdown-content a {
+/* .dropdown-content a {
     position: relative;
     left: -24px;
     bottom: -10px;
@@ -152,7 +173,7 @@ nav ul li a:hover {
 
 .dropdown-content a:hover {
     background-color: #f5f5f5;
-}
+} */
 
 /* 三角形 */
 /* .triangle {
