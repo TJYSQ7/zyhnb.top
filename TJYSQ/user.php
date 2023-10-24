@@ -21,7 +21,7 @@
             <tr>
                 <th>id</th>
                 <th>用户</th>
-                <th>邮箱</th>
+                <th>手机号</th>
                 <th>操作</th>
             </tr>
             <?php while ($row = mysqli_fetch_array($select)) { ?>
@@ -29,7 +29,7 @@
                 <tr>
                     <td><?= $row['id'] ?></td>
                     <td><?= $row['username'] ?></td>
-                    <td><?= $row['email'] ?></td>
+                    <td><?= $row['phone'] ?></td>
                     <td>2</td>
                 </tr>
 
