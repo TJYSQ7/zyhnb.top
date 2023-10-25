@@ -12,14 +12,14 @@
 </head>
 
 <body class="AI">
-    <?php require '../view/nav.html' ?><!-- 导航栏 -->
+    <?php require '../view/nav.php' ?><!-- 导航栏 -->
     <main><!-- 内容区 -->
 
 
 
-        <div class="article">
+        <article>
             <h1>开发中</h1>
-        </div>
+        </article>
 
 
 

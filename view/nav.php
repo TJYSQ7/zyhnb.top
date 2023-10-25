@@ -18,10 +18,21 @@
 
     </div>
 
-    <div class="login"><!-- 用户区域 -->
-        <a href="//zyhnb.top/php/login.php">登录</a>
-        <span>|</span>
-        <a href="//zyhnb.top/php/register.html">注册</a>
-    </div>
+    <?php if (!isset($_SESSION['loggedUsername'])) { ?>
+        <div class="login"><!-- 登录/注册 -->
+            <a href="//zyhnb.top/php/login.php">登录</a>
+            <span>|</span>
+            <a href="//zyhnb.top/php/register.html">注册</a>
+        </div>
+    <?php }; ?>
+
+    <?php if (isset($_SESSION['loggedUsername'])) { ?>
+        <div class="user"><!-- 用户区域 -->
+            <img src="//zyhnb.top/images/users.png" alt="">
+            <a href="//zyhnb.top/data/logout.php">退出</a>
+        </div>
+    <?php }; ?>
+
+
 
 </nav>

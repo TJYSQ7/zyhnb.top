@@ -110,7 +110,7 @@ nav ul li a:hover {
     transform: translate(0em, 0.2em);
 }
 
-/* 用户 */
+/* 登录/注册 */
 .login {
     width: 80px;
     height: 34px;
@@ -130,6 +130,26 @@ nav ul li a:hover {
 
 .login span {
     color: #abcdff;
+}
+
+/* 用户 */
+.user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.user img {
+    width: 36px;
+    border-radius: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+.user a {
+    color: #fe86d2;
+    margin-right: 20px;
+    margin-left: 10px;
 }
 
 /* 下拉按钮 */

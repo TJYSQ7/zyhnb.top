@@ -7,7 +7,7 @@ main {
     justify-content: center;
 }
 
-.article {
+article {
     width: 1000px;
     height: 1500px;
     background-color: #FFFFFF;

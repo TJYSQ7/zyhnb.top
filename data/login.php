@@ -25,7 +25,7 @@ $sql = "select * from info where phone= '$phone' and pw= '$pw' ";
 $select = mysqli_query($conn, $sql);
 if (mysqli_num_rows($select) > 0) {
     $_SESSION['loggedUsername'] = $phone;
-    echo "<script>alert('登陆成功');location.href='../php/login.php';</script>";
+    echo "<script>alert('登陆成功');location.href='//zyhnb.top';</script>";
 } else {
     echo "<script>alert('用户名或密码错误');history.back();</script>";
 }

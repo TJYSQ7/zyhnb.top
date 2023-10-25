@@ -1,3 +1,4 @@
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -12,9 +13,9 @@
 </head>
 
 <body class="index">
-    <?php require './view/nav.html' ?><!-- 导航栏 -->
+    <?php require './view/nav.php' ?><!-- 导航栏 -->
     <main><!-- 内容区域 -->
-        <div class="article"> <!-- 文章区域 -->
+        <article> <!-- 文章列表 -->
             <div class="box"></div>
 
 
@@ -40,12 +41,12 @@
 
             <hr>
             <?php require './view/footer.html' ?><!-- 底部区域 -->
-        </div>
-        <div class="sidebar"><!-- 侧边栏区域 -->
+        </article>
+        <aside><!-- 侧边栏 -->
             <div class="hot-question"><!-- 其他区域 --></div>
             <hr>
             <?php require './view/footer.html' ?><!-- 底部区域 -->
-        </div>
+        </aside>
     </main>
 </body>
 

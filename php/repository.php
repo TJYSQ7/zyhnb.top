@@ -12,9 +12,9 @@
 </head>
 
 <body class="repository">
-    <?php require '../view/nav.html' ?><!-- 导航栏 -->
+    <?php require '../view/nav.php' ?><!-- 导航栏 -->
     <main><!-- 内容区域 -->
-        <div class="article"> <!-- 文章区域 -->
+        <article><!-- 文章区域 -->
 
 
 
@@ -81,13 +81,13 @@
 
             <hr>
             <?php require '../view/footer.html' ?><!-- 底部区域 -->
-        </div>
-        <div class="sidebar"><!-- 侧边栏区域 -->
+        </article>
+        <aside><!-- 侧边栏区域 -->
             <div class="tuijian">全部分类</div>
             <div class="hot-question"><!-- 其他区域 --></div>
             <hr>
             <?php require '../view/footer.html' ?><!-- 底部区域 -->
-        </div>
+        </aside>
     </main>
 </body>
 

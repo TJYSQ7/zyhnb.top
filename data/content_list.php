@@ -1,3 +1,3 @@
 <?php
-$sql = 'SELECT * FROM content_list';
+$sql = 'SELECT * FROM article';
 $select = mysqli_query($conn, $sql);

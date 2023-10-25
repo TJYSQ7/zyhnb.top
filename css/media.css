@@ -1,11 +1,11 @@
 @media (min-width:1050px) {
-    .article footer {
+    article footer {
         display: none;
     }
 }
 
 @media (max-width: 1050px) {
-    .sidebar {
+    aside {
         display: none;
     }
 }
@@ -23,7 +23,7 @@
         display: none;
     }
 
-    .article {
+    article {
         width: 350px;
     }
 }

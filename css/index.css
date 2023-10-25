@@ -7,8 +7,8 @@ main {
     justify-content: center;
 }
 
-/* 左 */
-.article {
+/* 文章列表 */
+article {
     width: 694px;
     margin-top: 10px;
 }
@@ -43,7 +43,7 @@ main {
 }
 
 /* 右 */
-.sidebar {
+aside {
     width: 296px;
     margin-top: 10px;
     margin-left: 10px;
