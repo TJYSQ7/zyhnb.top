@@ -1,3 +1,8 @@
+<?php session_start();
+if (!isset($_SESSION['loggedUsername'])) {
+    header('Location: http://zyhnb.top');
+    exit;
+} ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -19,7 +24,7 @@
                 <img src="../images/default.png" alt="">
                 <div class="info">
                     <h2>amazing</h2>
-                    <h3>♂️</h3>
+                    <h3><?php echo $_SESSION['loggedUsername'] ?></h3>
                 </div>
             </div>
         </div>

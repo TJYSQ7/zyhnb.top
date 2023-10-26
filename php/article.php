@@ -1,3 +1,5 @@
+<?php session_start();
+$id = $_GET['id'] ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -14,13 +16,13 @@
 <body class="index">
     <?php require '../view/nav.php' ?><!-- 导航栏 -->
     <main><!-- 内容区域 -->
-
-
-
-        <article></article>
-
-
-
+        <?php require '../common/function.php' ?>
+        <?php $conn = connect();
+        $all = article($conn, $id) ?>
+        <article>
+            <h1><?= $all['0']['title'] ?></h1>
+            <p><?= $all['0']['content'] ?></p>
+        </article>
     </main>
 </body>
 

@@ -25,7 +25,7 @@
             <?php foreach ($all as $row) { ?>
 
                 <div class="box">
-                    <div><a href="#"><?php echo $row['title']; ?></a></div>
+                    <div><a href="//zyhnb.top/php/article.php?id=<?php echo $row['id'] ?>"><?php echo $row['title']; ?></a></div>
                     <div><span><?php echo substr($row['content'], 0, 170) . '......'; ?></span></div>
                 </div>
 

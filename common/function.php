@@ -47,6 +47,16 @@ function select($conn, $table, $type)
         return $num;
     }
 }
+function article($conn, $id)
+{
+    $sql = "SELECT * FROM article where id = '$id' ";
+    $select = mysqli_query($conn, $sql);
+    if (!$select) {
+        die("查询失败");
+    }
+    $all = mysqli_fetch_all($select, MYSQLI_ASSOC);
+    return $all;
+}
 //插入数据
 function insert($conn, $table, $data)
 {
@@ -110,10 +120,12 @@ function login($conn, $data)
 {
     $phone = $data['phone'];
     $pw = MD5($data['pw']);
-    $sql = "select * from info where phone= '$phone' and pw= '$pw' ";
+    $sql = "select id,username,phone,createTime from info where phone= '$phone' and pw= '$pw' ";
     $select = mysqli_query($conn, $sql);
-    if (mysqli_num_rows($select) > 0) {
-        $_SESSION['loggedUsername'] = $phone;
+    $num = mysqli_num_rows($select);
+    if ($num > 0) {
+        $all = mysqli_fetch_all($select, MYSQLI_ASSOC);
+        $_SESSION['loggedUsername'] = $all[0]['username'];
         echo "<script>alert('登陆成功');location.href='//zyhnb.top';</script>";
     } else {
         echo "<script>alert('用户名或密码错误');history.back();</script>";
