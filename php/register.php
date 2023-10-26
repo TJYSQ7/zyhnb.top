@@ -1,3 +1,8 @@
+<?php session_start();
+if (isset($_SESSION['loggedUsername'])) {
+    header('Location: http://zyhnb.top');
+    exit;
+} ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 

@@ -1,4 +1,8 @@
-<?php session_start() ?>
+<?php session_start();
+if (isset($_SESSION['loggedUsername'])) {
+    header('Location: http://zyhnb.top');
+    exit;
+} ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -28,8 +32,6 @@
             </tr>
         </table>
     </form>
-    <?php echo '用户名：' . $_SESSION['loggedUsername'] ?>
-    <a href="../data/logout.php">注销</a>
 </body>
 
 </html>

@@ -1,4 +1,4 @@
 <?php
 session_start();
 session_destroy();
-header('location://zyhnb.top');
+header('Location: http://zyhnb.top');

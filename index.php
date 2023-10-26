@@ -17,26 +17,20 @@
     <main><!-- 内容区域 -->
         <article> <!-- 文章列表 -->
             <div class="box"></div>
-
-
-
-
-
-            <?php require './common/conn.php'; ?><!-- 连接数据库 -->
-            <?php require './data/content_list.php'; ?>
-            <?php while ($row = mysqli_fetch_array($select)) { ?>
+            <?php require './common/function.php' ?>
+            <?php
+            $conn = connect();
+            $all = select($conn, 'article', 'content')
+            ?>
+            <?php foreach ($all as $row) { ?>
 
                 <div class="box">
                     <div><a href="#"><?php echo $row['title']; ?></a></div>
-                    <div><span><?php echo $row['abstract']; ?></span></div>
+                    <div><span><?php echo substr($row['content'], 0, 170) . '......'; ?></span></div>
                 </div>
 
-            <?php }; ?>
-            <?php require './common/disconn.php' ?><!-- 断开连接 -->
-
-
-
-
+            <?php } ?>
+            <?php close($conn) ?>
 
 
             <hr>

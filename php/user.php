@@ -29,6 +29,16 @@
                     <li><a href="">文章</a></li>
                     <li><a href="">文章</a></li>
                 </ul>
+                <form method="post" action="../data/article_add.php">
+                    标题：
+                    <input name="title" type="text" placeholder="请输入标题">
+                    <br>
+                    摘要：
+                    <textarea name="content" id="" cols="30" rows="10"></textarea>
+                    <br>
+                    <input type="submit">
+                    <input type="reset">
+                </form>
             </div>
             <div class="right">
                 <div class="create_1">
