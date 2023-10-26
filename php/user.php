@@ -23,8 +23,8 @@ if (!isset($_SESSION['loggedUsername'])) {
             <div class="main">
                 <img src="../images/default.png" alt="">
                 <div class="info">
-                    <h2>amazing</h2>
-                    <h3><?php echo $_SESSION['loggedUsername'] ?></h3>
+                    <h2><?php echo $_SESSION['loggedUsername'] ?></h2>
+                    <h3>♂️</h3>
                 </div>
             </div>
         </div>

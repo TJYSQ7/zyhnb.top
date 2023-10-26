@@ -25,12 +25,15 @@
     <?php if (isset($_SESSION['loggedUsername'])) { ?>
         <div class="dropdown"><!-- 用户区域 -->
             <a href="//zyhnb.top/php/user.php" class="dropbtn">
-                <img src="//zyhnb.top/images/default.png" width="30px">
+                <img src="//zyhnb.top/images/default.png" width="35px">
             </a>
             <div class="dropdown-content">
-                <a href="//zyhnb.top/php/user.php">个人主页</a>
-                <a href="">内容管理</a>
-                <a href="//zyhnb.top/data/logout.php">退出登录</a>
+                <div class="dropdown-con">
+                    <div class="triangle"></div>
+                    <a href="//zyhnb.top/php/user.php">个人主页</a>
+                    <a href="">内容管理</a>
+                    <a href="//zyhnb.top/data/logout.php">退出登录</a>
+                </div>
             </div>
         </div>
     <?php }; ?>
