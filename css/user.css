@@ -81,22 +81,35 @@ main {
     margin-left: 10px;
     background-color: #fff;
     border-radius: 4px;
-}
-
-.create {
-    display: flex;
-    align-items: center;
-    height: 56px;
     padding: 0 10px;
 }
 
-.right img {
+.create_1 {
+    display: flex;
+    align-items: center;
+    height: 56px;
+}
+
+.create_1 img {
     width: 80px;
     height: 40px;
     margin-right: 10px;
 }
 
-.right span {
+.create_1 span {
     font-size: 16px;
     font-weight: 600;
+}
+
+.create_3 {
+    border: 1px solid rgba(5, 109, 232, 0.5);
+    border-radius: 4px;
+    text-align: center;
+    margin: 0 7px;
+}
+
+.create_3 a {
+    color: rgb(5, 109, 232);
+    line-height: 40px;
+    padding: 8px 94px;
 }

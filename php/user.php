@@ -31,13 +31,14 @@
                 </ul>
             </div>
             <div class="right">
-                <div class="create">
+                <div class="create_1">
                     <img src="../images/create.png" alt="">
                     <span>创作中心</span>
                 </div>
                 <div></div>
-                <div></div>
+                <div class="create_3"><a href="">+开始创作</a></div>
             </div>
+        </div>
         </div>
     </main>
 </body>
