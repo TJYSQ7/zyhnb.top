@@ -34,7 +34,23 @@ if (!isset($_SESSION['loggedUsername'])) {
                     <li><a href="">文章</a></li>
                     <li><a href="">文章</a></li>
                 </ul>
-                <div></div>
+                <div>
+                    <?php require '../common/function.php' ?>
+                    <?php $conn = connect();
+                    $all = content($conn, $_SESSION['loggedUsername']) ?>
+                    <table>
+                        <tr>
+                            <th>标题</th>
+                            <th>操作</th>
+                        </tr>
+                        <?php foreach ($all as $row) { ?>
+                            <tr>
+                                <td><?= $row['title'] ?></td>
+                                <td><a href="../data/article_del.php?id=<?= $row['id'] ?>">删除</a></td>
+                            </tr>
+                        <?php }; ?>
+                    </table>
+                </div>
             </div>
             <div class="right">
                 <div class="create_1">

@@ -13,7 +13,7 @@ function connect()
     mysqli_query($conn, "set names utf8mb4");
     return $conn;
 }
-//查询数据
+//查询全部数据
 function select($conn, $table, $type)
 {
     //处理结果集
@@ -47,9 +47,20 @@ function select($conn, $table, $type)
         return $num;
     }
 }
+//查询单一数据
 function article($conn, $id)
 {
     $sql = "SELECT * FROM article where id = '$id' ";
+    $select = mysqli_query($conn, $sql);
+    if (!$select) {
+        die("查询失败");
+    }
+    $all = mysqli_fetch_all($select, MYSQLI_ASSOC);
+    return $all;
+}
+function  content($conn, $author)
+{
+    $sql = "SELECT * FROM article where author = '$author' ";
     $select = mysqli_query($conn, $sql);
     if (!$select) {
         die("查询失败");
@@ -69,9 +80,9 @@ function insert($conn, $table, $data)
         $sql = "insert into $table values(NULL,'$name','$pw','$phone','$time')";
         $insert = mysqli_query($conn, $sql);
         if ($insert) {
-            echo "<script>alert('数据插入成功');history.back();</script>";
+            echo "<script>alert('注册成功');location.href='//zyhnb.top/php/login.php';</script>";
         } else {
-            echo "<script>alert('数据插入失败');history.back();</script>";
+            echo "<script>alert('注册失败');history.back();</script>";
         };
     }
     if ($table == 'article') {
@@ -83,9 +94,9 @@ function insert($conn, $table, $data)
         $sql = "insert into $table values(NULL,'$title','$content','$author','$time');";
         $insert = mysqli_query($conn, $sql);
         if ($insert) {
-            echo "<script>alert('数据插入成功');location.href='//zyhnb.top';</script>";
+            echo "<script>alert('文章发布成功');location.href='//zyhnb.top';</script>";
         } else {
-            echo "<script>alert('数据插入失败');history.back();</script>";
+            echo "<script>alert('文章发布失败');history.back();</script>";
         };
     }
 }
@@ -94,8 +105,8 @@ function delete($conn, $table, $data)
 {
     if ($table == 'info') {
         //处理数据集
-        $name = $data['name'];
-        $sql = "delete from $table where username='$name'";
+        $id = $data['id'];
+        $sql = "delete from $table where id='$id'";
         $delete = mysqli_query($conn, $sql);
         if ($delete) {
             echo "<script>alert('数据删除成功');history.back();</script>";
@@ -105,8 +116,8 @@ function delete($conn, $table, $data)
     }
     if ($table == 'article') {
         //处理数据集
-        $title = $data['title'];
-        $sql = "delete from $table where title='$title'";
+        $id = $data['id'];
+        $sql = "delete from $table where id='$id'";
         $delete = mysqli_query($conn, $sql);
         if ($delete) {
             echo "<script>alert('数据删除成功');history.back();</script>";

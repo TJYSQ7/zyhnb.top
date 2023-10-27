@@ -74,6 +74,32 @@ main {
     padding: 16px 0;
 }
 
+table {
+    border-collapse: collapse;
+    width: 90%;
+    margin: 30px auto;
+}
+
+caption {
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: bold;
+    border-bottom: 1px dashed #e4b247;
+    color: #0bef40;
+}
+
+th {
+    width: 25%;
+    height: 40px;
+    background-color: #aaceff;
+}
+
+td {
+    text-align: center;
+    height: 60px;
+    border-bottom: 1px solid #c9c9c9;
+}
+
 .right {
     flex: 3;
     height: 300px;

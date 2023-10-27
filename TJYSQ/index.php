@@ -1,3 +1,8 @@
+<?php session_start();
+if ($_SESSION['loggedUsername'] != '奥特曼') {
+    header('Location: http://zyhnb.top');
+    exit;
+} ?>
 <!DOCTYPE html>
 <html lang="zh-CN">
 
@@ -11,17 +16,12 @@
 
 <body class="a">
     <?php require './view/nav.html' ?>
-    <div class="content"><!-- 内容区域 -->
-        <a href="./test.php">测试连接</a>
-
-        <?php require '../common/conn.php' ?><!-- 连接数据库 -->
-        <?php require '../data/content_num.php' ?>
+    <main><!-- 内容区域 -->
+        <?php require '../common/function.php' ?>
+        <?php $conn = connect();
+        $num = select($conn, 'article', 'num') ?>
         <h1>目前共有：<?= $num ?>篇文章</h1>
-        <?php require '../common/disconn.php' ?><!-- 断开连接 -->
-
-
-
-    </div>
+    </main>
 </body>
 
 </html>
