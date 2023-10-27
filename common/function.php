@@ -77,7 +77,7 @@ function insert($conn, $table, $data)
         $pw = md5($data['pw']);
         $phone = $data['phone'];
         $time = time();
-        $sql = "insert into $table values(NULL,'$name','$pw','$phone','$time');";
+        $sql = "insert into $table values(NULL,'$name','$pw','$phone','$time')";
         $insert = mysqli_query($conn, $sql);
         if ($insert) {
             echo "<script>alert('注册成功');location.href='//zyhnb.top/php/login.php';</script>";
