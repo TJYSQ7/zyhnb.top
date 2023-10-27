@@ -77,14 +77,13 @@ function insert($conn, $table, $data)
         $pw = md5($data['pw']);
         $phone = $data['phone'];
         $time = time();
-        $sql = "insert into $table values(NULL,'$name','$pw','$phone','$time')";
-        echo $sql;
-        // $insert = mysqli_query($conn, $sql);
-        // if ($insert) {
-        //     echo "<script>alert('注册成功');location.href='//zyhnb.top/php/login.php';</script>";
-        // } else {
-        //     echo "<script>alert('注册失败');history.back();</script>";
-        // };
+        $sql = "insert into $table values(NULL,'$name','$pw','$phone','$time');";
+        $insert = mysqli_query($conn, $sql);
+        if ($insert) {
+            echo "<script>alert('注册成功');location.href='//zyhnb.top/php/login.php';</script>";
+        } else {
+            echo "<script>alert('注册失败');history.back();</script>";
+        };
     }
     if ($table == 'article') {
         //处理数据集
