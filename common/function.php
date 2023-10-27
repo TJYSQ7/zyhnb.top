@@ -83,7 +83,7 @@ function insert($conn, $table, $data)
         $sql = "insert into $table values(NULL,'$title','$content','$author','$time');";
         $insert = mysqli_query($conn, $sql);
         if ($insert) {
-            echo "<script>alert('数据插入成功');history.back();</script>";
+            echo "<script>alert('数据插入成功');location.href='//zyhnb.top';</script>";
         } else {
             echo "<script>alert('数据插入失败');history.back();</script>";
         };
@@ -131,15 +131,15 @@ function login($conn, $data)
         echo "<script>alert('用户名或密码错误');history.back();</script>";
     }
 }
+//断开数据库连接
+function close($conn)
+{
+    mysqli_close($conn);
+}
 //退出登录
 function logout()
 {
     session_start();
     session_destroy();
     header('location://zyhnb.top');
-}
-//断开数据库连接
-function close($conn)
-{
-    mysqli_close($conn);
 }

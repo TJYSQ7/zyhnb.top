@@ -55,3 +55,14 @@ function loginCheck($data)
         }
     }
 }
+//添加文章验证！！！
+function articleCheck($data)
+{
+    $title = trim($data['title']);
+    $content = trim($data['content']);
+    $author = trim($data['author']);
+    if (!strlen($title) || !strlen($content) || !strlen($author)) {
+        echo "<script>alert('标题，内容不能为空');history.back();</script>";
+        exit;
+    }
+}

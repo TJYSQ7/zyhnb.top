@@ -1,4 +1,3 @@
 <?php
-session_start();
-session_destroy();
-header('Location: http://zyhnb.top');
+require '../common/function.php';
+logout();

@@ -16,21 +16,11 @@ if (isset($_SESSION['loggedUsername'])) {
 
 <body>
     <form action="../data/login.php" method="post" onsubmit="return loginCheck()">
-        <table>
-            <caption>登录</caption>
-            <tr>
-                <th>手机号:</th>
-                <td><input type="number" name="phone" required></td>
-            </tr>
-            <tr>
-                <th>密码:</th>
-                <td><input type="password" name="pw" required></td>
-            </tr>
-            <tr>
-                <th><input type="reset"></th>
-                <td><input type="submit" value="登录"></td>
-            </tr>
-        </table>
+        <h1>登录</h1>
+        <input type="number" name="phone" placeholder="手机号" required>
+        <input type="password" name="pw" placeholder="密码" required>
+        <input type="submit" value="登录">
+        <p>还没有账户 ？<a href="//zyhnb.top/php/register.php">注册</a></p>
     </form>
 </body>
 

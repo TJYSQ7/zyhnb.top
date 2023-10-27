@@ -15,30 +15,15 @@ if (isset($_SESSION['loggedUsername'])) {
 </head>
 
 <body>
-    <form action="../common/function.php" method="post" onsubmit="return registerCheck()">
-        <table>
-            <caption>注册</caption>
-            <tr>
-                <th>用户名:</th>
-                <td><input type="text" name="name" required></td>
-            </tr>
-            <tr>
-                <th>密码:</th>
-                <td><input type="password" name="pw" required></td>
-            </tr>
-            <tr>
-                <th>确认密码:</th>
-                <td><input type="password" name="cpw" required></td>
-            </tr>
-            <tr>
-                <th>手机号:</th>
-                <td><input type="number" name="phone" required></td>
-            </tr>
-            <tr>
-                <th><input type="reset"></th>
-                <td><input type="submit"></td>
-            </tr>
-        </table>
+    <form action="../data/register.php" method="post" onsubmit="return registerCheck()">
+        <h1>注册</h1>
+        <p>Signup now and get full access to our app.</p>
+        <input type="text" name="name" placeholder="用户名" required>
+        <input type="password" name="pw" placeholder="密码" required>
+        <input type="password" name="cpw" placeholder="确认密码" required>
+        <input type="number" name="phone" placeholder="手机号" required>
+        <input type="submit">
+        <p>已经有账户了吗 ？ <a href="//zyhnb.top/php/login.php">登录</a></p>
     </form>
 </body>
 

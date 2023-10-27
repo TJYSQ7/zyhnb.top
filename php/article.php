@@ -21,7 +21,9 @@ $id = $_GET['id'] ?>
         $all = article($conn, $id) ?>
         <article>
             <h1><?= $all['0']['title'] ?></h1>
+            <h3>作者：<?= $all['0']['author'] ?></h3>
             <p><?= $all['0']['content'] ?></p>
+            <h4>发布时间：<?= date('Y-m-d H:i:s', $all['0']['createTime']) ?></h4>
         </article>
     </main>
 </body>

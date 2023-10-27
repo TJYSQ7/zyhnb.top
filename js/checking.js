@@ -1,3 +1,4 @@
+//注册数据检验
 function registerCheck() {
     let name = document.getElementsByName('name')[0].value.trim();
     let pw = document.getElementsByName('pw')[0].value.trim();
@@ -27,7 +28,7 @@ function registerCheck() {
     }
     return true;
 }
-
+//登录数据检验
 function loginCheck() {
     let phone = document.getElementsByName('phone')[0].value.trim();
     let pw = document.getElementsByName('pw')[0].value.trim();
@@ -45,3 +46,14 @@ function loginCheck() {
     }
     return true;
 }
+//文章数据检验
+function articleCheck() {
+    let title = document.getElementsByName('title')[0].value.trim();
+    let content = document.getElementsByName('content')[0].value.trim();
+    if (!title || !content) {
+        alert('标题和内容不能为空');
+        return false;
+    }
+    return true;
+}
+

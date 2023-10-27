@@ -10,7 +10,7 @@
     </ul>
 
     <div class="search"><!-- 搜索区域 -->
-        <input type="text" class="search-input" placeholder="   搜索你感兴趣的内容..." />
+        <input type="text" class="search-input" placeholder="搜索你感兴趣的内容..." />
         <button class="search-button">搜索</button>
     </div>
 

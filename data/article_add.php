@@ -1,5 +1,8 @@
 <?php
-$date = $_POST;
+$data = $_POST;
+$data['author'] = $_GET['author'];
+require '../common/check.php';
 require '../common/function.php';
+articleCheck($data);
 $conn = connect();
-insert($conn, 'article', $date);
+insert($conn, 'article', $data);

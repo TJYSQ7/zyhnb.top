@@ -1,21 +1,71 @@
-table {
-    width: 50%;
-    margin: auto;
-    border-collapse: collapse;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-caption {
-    font-size: 25px;
-    font-weight: bold;
-    color: rgb(254, 121, 19);
+body {
+    background-color: #e8e8e8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
-th {
-    width: 50%;
-    padding: 8px;
-    text-align: right;
+form {
+    width: 350px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }
 
-td {
-    width: 50%;
+h1 {
+    color: royalblue;
+    margin: 10px;
+    letter-spacing: 10px;
+}
+
+p {
+    color: rgba(88, 87, 87, 0.822);
+}
+
+input {
+    outline: none;
+    padding: 14px 10px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+input:hover {
+    border: 2px solid lightgrey;
+    box-shadow: 0px 0px 20px -17px;
+}
+
+input:active {
+    transform: scale(0.95);
+}
+
+input:focus {
+    border: 2px solid grey;
+}
+
+input[type="submit"] {
+    font-size: 18px;
+    padding: 10px;
+    color: white;
+    letter-spacing: 10px;
+    background-color: rgb(85, 119, 224);
+}
+
+a {
+    text-decoration: none;
+    color: royalblue;
+}
+
+a:hover {
+    color: rgb(142, 142, 255);
 }

@@ -12,7 +12,8 @@ if (!isset($_SESSION['loggedUsername'])) {
     <title>Document</title>
     <link rel="stylesheet" href="../css/html.css">
     <link rel="stylesheet" href="../css/nav.css">
-    <link rel="stylesheet" href="../css/user.css">
+    <link rel="stylesheet" href="../css/user_2.css">
+    <script src="../js/checking.js"></script>
 </head>
 
 <body>
@@ -29,22 +30,12 @@ if (!isset($_SESSION['loggedUsername'])) {
             </div>
         </div>
         <div class="bottom">
-            <div class="left">
-                <ul>
-                    <li><a href="">文章</a></li>
-                    <li><a href="">文章</a></li>
-                </ul>
-                <div></div>
-            </div>
-            <div class="right">
-                <div class="create_1">
-                    <img src="../images/create.png" alt="">
-                    <span>创作中心</span>
-                </div>
-                <div></div>
-                <div class="create_3"><a href="./user_2.php">+开始创作</a></div>
-            </div>
-        </div>
+            <form onsubmit="return articleCheck()" method="post" action="../data/article_add.php?author=<?= $_SESSION['loggedUsername'] ?>">
+                <input type="text" name=" title" placeholder="请输入标题" required>
+                <textarea name="content" cols="80" rows="24" placeholder="请输入内容" required></textarea>
+                <input type="submit">
+                <input type="reset" value="清空">
+            </form>
         </div>
     </main>
 </body>
