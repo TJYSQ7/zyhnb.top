@@ -7,3 +7,4 @@ register_check($data);
 $conn = connect();
 username_check($conn, $data);
 add_user($conn, $data);
+disconn($conn);

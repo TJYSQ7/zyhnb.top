@@ -17,10 +17,12 @@ if ($_SESSION['loggedUsername'] != '奥特曼') {
 <body class="a">
     <?php require './view/nav.html' ?>
     <main><!-- 内容区域 -->
-        <?php require '../common/function.php' ?>
-        <?php $conn = connect();
-        $num = select($conn, 'article', 'num') ?>
+        <?php require '../common/function.php';
+        require '../common/select.php';
+        $conn = connect();
+        $num = sel_article_num($conn) ?>
         <h1>目前共有：<?= $num ?>篇文章</h1>
+        <?php disconn($conn) ?>
     </main>
 </body>
 

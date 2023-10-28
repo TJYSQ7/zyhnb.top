@@ -17,9 +17,10 @@ if ($_SESSION['loggedUsername'] != '奥特曼') {
 <body class="c">
     <?php require './view/nav.html' ?>
     <div class="content"><!-- 内容区域 -->
-        <?php require '../common/function.php' ?>
-        <?php $conn = connect();
-        $all = select($conn, 'info', 'content') ?>
+        <?php require '../common/function.php';
+        require '../common/select.php';
+        $conn = connect();
+        $all = sel_user_all($conn) ?>
         <table>
             <caption>用户管理</caption>
             <tr>
@@ -37,6 +38,7 @@ if ($_SESSION['loggedUsername'] != '奥特曼') {
                 </tr>
             <?php }; ?>
         </table>
+        <?php disconn($conn) ?>
     </div>
 </body>
 

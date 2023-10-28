@@ -1,5 +1,7 @@
 <?php
 $data = $_GET;
 require '../../common/function.php';
+require '../../common/change.php';
 $conn = connect();
-delete($conn, 'info', $data);
+del_user($conn, $data);
+disconn($conn);
