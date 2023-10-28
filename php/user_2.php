@@ -30,7 +30,7 @@ if (!isset($_SESSION['loggedUsername'])) {
             </div>
         </div>
         <div class="bottom">
-            <form onsubmit="return articleCheck()" method="post" action="../data/article_add.php?author=<?= $_SESSION['loggedUsername'] ?>">
+            <form onsubmit="return articleCheck()" method="post" action="../data/article_change.php?author=<?= $_SESSION['loggedUsername'] ?>">
                 <input type="text" name=" title" placeholder="请输入标题" required>
                 <textarea name="content" cols="80" rows="24" placeholder="请输入内容" required></textarea>
                 <input type="submit">

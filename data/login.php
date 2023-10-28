@@ -1,8 +1,9 @@
 <?php
 session_start();
 $data = $_POST;
-require '../common/function.php';
 require '../common/check.php';
-loginCheck($data);
+require '../common/function.php';
+require '../common/select.php';
+login_check($data);
 $conn = connect();
-login($conn, $data);
+sel_login($conn, $data);

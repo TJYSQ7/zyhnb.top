@@ -1,8 +1,9 @@
 <?php
 require '../common/check.php';
 require '../common/function.php';
+require '../common/change.php';
 $data = $_POST;
-registerCheck($data);
+register_check($data);
 $conn = connect();
-usernameCheck($conn, $data);
-insert($conn, 'info', $data);
+username_check($conn, $data);
+add_user($conn, $data);

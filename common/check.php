@@ -1,6 +1,6 @@
 <?php
 //注册数据验证！！！
-function registerCheck($data)
+function register_check($data)
 {
     $name = trim($data['name']);
     $pw = trim($data['pw']);
@@ -26,7 +26,7 @@ function registerCheck($data)
     }
 }
 //判断用户名是否被占用
-function usernameCheck($conn, $data)
+function username_check($conn, $data)
 {
     $name = $data['name'];
     $sql = "select * from info where username='$name'";
@@ -37,7 +37,7 @@ function usernameCheck($conn, $data)
     }
 }
 //登录数据验证！！！
-function loginCheck($data)
+function login_check($data)
 {
     $phone = trim($data['phone']);
     $pw = trim($data['pw']);
@@ -56,7 +56,7 @@ function loginCheck($data)
     }
 }
 //添加文章验证！！！
-function articleCheck($data)
+function article_check($data)
 {
     $title = trim($data['title']);
     $content = trim($data['content']);

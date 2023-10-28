@@ -16,15 +16,17 @@ $id = $_GET['id'] ?>
 <body class="index">
     <?php require '../view/nav.php' ?><!-- 导航栏 -->
     <main><!-- 内容区域 -->
-        <?php require '../common/function.php' ?>
-        <?php $conn = connect();
-        $all = article($conn, $id) ?>
+        <?php require '../common/function.php';
+        require '../common/select.php';
+        $conn = connect();
+        $all = sel_article_one($conn, $id) ?>
         <article>
             <h1><?= $all['0']['title'] ?></h1>
             <h3>作者：<?= $all['0']['author'] ?></h3>
             <p><?= $all['0']['content'] ?></p>
             <h4>发布时间：<?= date('Y-m-d H:i:s', $all['0']['createTime']) ?></h4>
         </article>
+        <?php disconn($conn) ?>
     </main>
 </body>
 

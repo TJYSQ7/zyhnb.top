@@ -35,9 +35,11 @@ if (!isset($_SESSION['loggedUsername'])) {
                     <li><a href="">文章</a></li>
                 </ul>
                 <div>
-                    <?php require '../common/function.php' ?>
-                    <?php $conn = connect();
-                    $all = content($conn, $_SESSION['loggedUsername']) ?>
+                    <?php require '../common/function.php';
+                    require '../common/select.php';
+                    $conn = connect();
+                    $author = $_SESSION['loggedUsername'];
+                    $all = sel_article_author($conn, $author) ?>
                     <table>
                         <tr>
                             <th>标题</th>
@@ -46,10 +48,11 @@ if (!isset($_SESSION['loggedUsername'])) {
                         <?php foreach ($all as $row) { ?>
                             <tr>
                                 <td><?= $row['title'] ?></td>
-                                <td><a href="../data/article_del.php?id=<?= $row['id'] ?>">删除</a></td>
+                                <td><a href="../data/article_change.php?id=<?= $row['id'] ?>">删除</a></td>
                             </tr>
-                        <?php }; ?>
+                        <?php } ?>
                     </table>
+                    <?php disconn($conn) ?>
                 </div>
             </div>
             <div class="right">

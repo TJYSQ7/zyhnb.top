@@ -17,22 +17,18 @@
     <main><!-- 内容区域 -->
         <article> <!-- 文章列表 -->
             <div class="box"></div>
-            <?php require './common/function.php' ?>
-            <?php
+            <?php require './common/function.php';
+            require './common/select.php';
             $conn = connect();
-            $all = select($conn, 'article', 'content')
+            $all = sel_article_all($conn)
             ?>
             <?php foreach ($all as $row) { ?>
-
                 <div class="box">
                     <div><a href="//zyhnb.top/php/article.php?id=<?php echo $row['id'] ?>"><?php echo $row['title']; ?></a></div>
                     <div><span><?php echo substr($row['content'], 0, 170) . '......'; ?></span></div>
                 </div>
-
             <?php } ?>
-            <?php close($conn) ?>
-
-
+            <?php disconn($conn) ?>
             <hr>
             <?php require './view/footer.html' ?><!-- 底部区域 -->
         </article>
